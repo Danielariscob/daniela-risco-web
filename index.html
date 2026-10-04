@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Daniela Risco</title>
+  <meta name="description" content="Daniela Risco is a data scientist doing an MSc in Data Science at the University of Bristol. Machine learning, analytics and AI products.">
+  <meta name="theme-color" content="#FFFFFF">
+
+  <!-- Social preview (replace the domain with yours) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Daniela Risco">
+  <meta property="og:description" content="MSc Data Science at the University of Bristol. Machine learning, analytics and AI products.">
+  <meta property="og:image" content="https://www.daniela-risco.com/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23FACBDC'/%3E%3Ccircle cx='12' cy='20' r='3' fill='none' stroke='%23221E22' stroke-width='2'/%3E%3Ccircle cx='12' cy='20' r='8' fill='none' stroke='%23221E22' stroke-width='2'/%3E%3Ccircle cx='12' cy='20' r='13' fill='none' stroke='%23221E22' stroke-width='2'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:ital,wght@0,400..700;1,400&family=Martian+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="site-header__inner wrap">
+      <a class="brand" href="#top" aria-label="Daniela Risco, back to top">
+        <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="14" cy="26" r="3.5"/>
+          <circle cx="14" cy="26" r="9.5"/>
+          <circle cx="14" cy="26" r="16"/>
+        </svg>
+        <span class="brand__name">Daniela Risco</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero wrap" id="top" aria-labelledby="hero-title">
+      <div class="hero__text">
+        <h1 class="hero__title" id="hero-title">
+          <span class="line"><span>Daniela</span></span>
+          <span class="line"><span>Risco</span></span>
+        </h1>
+
+        <p class="hero__lead fade-in">
+          Data scientist, currently doing an MSc in Data Science at the University of Bristol.
+          I use machine learning and AI to solve real‑world problems, from gas‑plant maintenance to museum collections.
+        </p>
+      <!--
+        <dl class="hero__facts fade-in">
+          <div>
+            <dt>Based in</dt>
+            <dd>Bristol, United Kingdom</dd>
+          </div>
+          <div>
+            <dt>Studying</dt>
+            <dd>MSc Data Science, University of Bristol</dd>
+          </div>
+          <div>
+            <dt>Previously</dt>
+            <dd>Data Analyst at APTIM, Lima</dd>
+          </div>
+          <div>
+            <dt>Certified</dt>
+            <dd>Azure Data Scientist (DP‑100) and Power BI Data Analyst (PL‑300)</dd>
+          </div>
+        </dl>
+-->
+        <p class="hero__actions fade-in">
+          <a class="btn" href="#work">See selected work</a>
+          <a class="link-lg" href="mailto:danielarb.99@outlook.com">danielarb.99@outlook.com</a>
+        </p>
+      </div>
+
+      <figure class="hero__art">
+        <div class="print">
+          <canvas class="grain" id="grain" aria-hidden="true"></canvas>
+        </div>
+        <figcaption>Ripples, generated live in WebGL. Move your cursor over it.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ============ SELECTED WORK ============ -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="section-head wrap">
+        <h2 class="section-title" id="work-title"><span class="cm">/*</span> Selected work <span class="cm">*/</span></h2>
+        <p class="section-note">Machine learning, analytics and AI products. Web and app design is further down.</p>
+      </div>
+
+      <div class="stack">
+
+        <!-- Project 1 -->
+        <article class="band" style="--bg: var(--rose); --r: -0.55deg; --i: 0;">
+          <div class="band__inner wrap">
+            <div class="band__left">
+              <h3 class="band__title">MoodMuse</h3>
+              <div class="band__media">
+                <img src="img/og-image.jpg" alt="MoodMuse showing a painting recommended from a journal entry" loading="lazy">
+              </div>
+            </div>
+            <div class="band__right">
+              <dl class="band__meta">
+                <dt class="sr-only">When</dt>
+                <dd>2025<br>Built at Google’s AI in Action hackathon</dd>
+                <dt class="sr-only">Stack</dt>
+                <dd>Python, FastAPI, Vertex AI, BLIP‑2, OpenAI API, MongoDB Atlas</dd>
+              </dl>
+              <p class="band__desc">
+                You write how you feel, and MoodMuse finds a painting that matches it. I captioned about 15,000 artworks
+                from The Met’s open collection with BLIP‑2 on Vertex AI, enriched each one with emotion and colour
+                metadata in MongoDB Atlas, and matched them against the mood detected in the user’s text.
+                The API runs on FastAPI in Cloud Run.
+              </p>
+              <p class="band__links">
+                <a href="https://moodmuse-df2ac.web.app/" target="_blank" rel="noopener">Try the live demo</a>
+                <a href="https://github.com/Danielariscob/moodmuse" target="_blank" rel="noopener">Code on GitHub</a>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="band" style="--bg: var(--fog); --r: 0.65deg; --i: 1;">
+          <div class="band__inner wrap">
+            <div class="band__left">
+              <h3 class="band__title">Maintenance analytics for Peru LNG</h3>
+              <div class="band__media">
+                <img src="img/og-image.jpg" alt="Anonymised maintenance dashboard" loading="lazy">
+              </div>
+            </div>
+            <div class="band__right">
+              <dl class="band__meta">
+                <dt class="sr-only">When</dt>
+                <dd>2024 - 2025<br>APTIM, Melchorita LNG plant</dd>
+                <dt class="sr-only">Stack</dt>
+                <dd>Power BI, DAX, SQL Server, Power Automate, SharePoint, Azure</dd>
+              </dl>
+              <p class="band__desc">
+                I built and rolled out the maintenance dashboard for the Melchorita plant and analysed sensor data
+                from gas plants with an international engineering team. I also automated work‑order failure reporting
+                with Power Automate on SharePoint, and applied generative AI in the cloud to maintenance work.
+              </p>
+              <p class="band__links">
+                <span class="band__note">Client work. I’m happy to walk through it in an interview.</span>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="band" style="--bg: var(--lemon); --r: -0.4deg; --i: 2;">
+          <div class="band__inner wrap">
+            <div class="band__left">
+              <h3 class="band__title">Pathora</h3>
+              <div class="band__media">
+                <img src="img/og-image.jpg" alt="Pathora showing a walking route through Barranco on a map" loading="lazy">
+              </div>
+            </div>
+            <div class="band__right">
+              <dl class="band__meta">
+                <dt class="sr-only">When</dt>
+                <dd>2025<br>Entry for the Google Maps Platform Awards</dd>
+                <dt class="sr-only">Stack</dt>
+                <dd>Python, FastAPI, GPT‑4, Places API, Distance Matrix API, Firebase</dd>
+              </dl>
+              <p class="band__desc">
+                Describe the day you want, like “museums and cafés in Barranco, nothing rushed”, and Pathora returns a
+                route. GPT‑4 turns the request into constraints on time, energy and budget; the backend picks top‑rated
+                places from Google Maps and lays them out on an interactive map you can save or share.
+              </p>
+              <p class="band__links">
+                <a href="https://pathora-f706b.web.app/" target="_blank" rel="noopener">Try the live demo</a>
+                <a href="https://github.com/Danielariscob/pathora" target="_blank" rel="noopener">Code on GitHub</a>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="band" style="--bg: var(--sky); --r: 0.5deg; --i: 3;">
+          <div class="band__inner wrap">
+            <div class="band__left">
+              <h3 class="band__title">Music genre classification</h3>
+              <div class="band__media">
+                <img src="img/og-image.jpg" alt="PCA projection of tracks coloured by genre" loading="lazy">
+              </div>
+            </div>
+            <div class="band__right">
+              <dl class="band__meta">
+                <dt class="sr-only">When</dt>
+                <dd>2025<br>Machine learning notebook</dd>
+                <dt class="sr-only">Stack</dt>
+                <dd>Python, scikit‑learn, pandas, seaborn</dd>
+              </dl>
+              <p class="band__desc">
+                Classifies tracks into genres from audio features such as tempo and vocal presence. PCA compresses the
+                feature space, logistic regression predicts the genre, and the trained model then labels the part of the
+                dataset that had no genre. Accuracy held up with far fewer dimensions.
+              </p>
+              <p class="band__links">
+                <a href="https://github.com/Danielariscob/music-genre-classification" target="_blank" rel="noopener">Code on GitHub</a>
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about wrap" id="about" aria-labelledby="about-title">
+      <h2 class="section-title" id="about-title"><span class="cm">/*</span> About <span class="cm">*/</span></h2>
+
+      <figure class="about__photo">
+        <div class="print print--photo">
+          <img src="img/og-image.jpg" alt="Portrait of Daniela Risco" width="800" height="1000" loading="lazy">
+        </div>
+      </figure>
+
+      <div class="about__text">
+        <p class="about__lead">
+          I’m a Data Scientist working at the intersection of data, AI and technology, currently based in Bristol.
+        </p>
+        <p> At APTIM, I’ve worked with operational and sensor data from industrial environments, building data solutions for areas including Human Resources, Occupational Health and Logistics. I’m now also exploring how AI can support planning and decision-making, including a project focused on extracting and connecting information from SAP R/3 maintenance data. </p>
+        <p> My curiosity has taken me from industrial data to AI, from building digital products to experimenting with ideas of my own — including MoodMuse, a project that started with a painting. </p>
+
+        <dl class="toolkit">
+          <div>
+            <dt>Core Technologies</dt>
+            <dd>Python (Pandas, Scikit‑Learn, TensorFlow, Keras), R, SQL </dd>
+          </div>
+          <div>
+            <dt>Machine Learning</dt>
+            <dd>EDA, Feature engineering, Model Evaluation, Hyperparameter tuning, Supervised Learning (Linear Regression, Decision Trees, Random Forests) and Unsupervised Learning (K-Means, Hierarchical Clustering)</dd>
+          </div>
+          <div>
+            <dt>Cloud and AI services</dt>
+            <dd>Azure (Azure ML), Google Cloud (Vertex AI), OpenAI API, MongoDB Atlas, Firebase</dd>
+          </div>
+          <div>
+            <dt>Visualization</dt>
+            <dd>Looker, Power BI, Tableau</dd>
+          </div>
+          <div>
+            <dt>Automation</dt>
+            <dd>Power Automate, PowerApps, GitHub Actions</dd>
+          </div>
+          <div>
+            <dt>Building</dt>
+            <dd>HTML, CSS, JavaScript, FastAPI, Flutter</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="experience wrap" id="experience" aria-labelledby="exp-title">
+      <h2 class="section-title" id="exp-title"><span class="cm">/*</span> Experience <span class="cm">*/</span></h2>
+
+      <div class="tabs" data-tabs>
+        <div class="tabs__list" role="tablist" aria-label="Employers">
+          <span class="tabs__marker" aria-hidden="true"></span>
+          <button class="tabs__tab" role="tab" id="tab-aptim" aria-controls="panel-aptim" aria-selected="true">APTIM</button>
+          <button class="tabs__tab" role="tab" id="tab-enel" aria-controls="panel-enel" aria-selected="false" tabindex="-1">Enel Distribución</button>
+        </div>
+
+        <div class="tabs__panels">
+
+          <!-- APTIM -->
+          <div class="tabs__panel" role="tabpanel" id="panel-aptim" aria-labelledby="tab-aptim" tabindex="0">
+
+            <!-- Puesto más reciente -->
+            <div class="role-block">
+              <h3 class="role">AI & Data Science Consultant</h3>
+              <p class="role__meta">Sep 2026 - Present, Remote</p>
+              <ul class="role__list">
+                <li>Developing a Generative AI solution with Azure for intelligent maintenance work-order planning across two industrial plants operated by Pluspetrol. Leveraging historial SAP R/3 maintenance data to identify patterns, generate AI-driven recommendations, and support planning.</li>
+              </ul>
+            </div>
+
+            <!-- Puesto anterior -->
+              <h3 class="role">Data Analyst</h3>
+              <p class="role__meta">Oct 2024 – Aug 2026, Lima, Peru</p>
+              <ul class="role__list">
+                <li>Built Power BI dashboards for the Human Resources, Occupational Health and Logistics teams.</li>
+                <li>Analysed sensor data from gas plants alongside the international team.</li>
+                <li>Implemented the maintenance dashboard for the Melchorita plant (Peru LNG).</li>
+                <li>Automated work‑order failure reporting with Power Automate and SharePoint.</li>
+              </ul>
+            </div>
+
+          <!-- ENEL -->
+          <div class="tabs__panel" role="tabpanel" id="panel-enel" aria-labelledby="tab-enel" tabindex="0" hidden>
+
+            <!-- Puesto más reciente -->
+            <div class="role-block">
+              <h3 class="role">Customer Experience and Interaction Analyst</h3>
+              <p class="role__meta">Nov 2021 – Jul 2024, Lima, Peru</p>
+              <ul class="role__list">
+                <li>Built a Python-based predictive model for metering equipment failures, achieving 89% accuracy and an estimated PEN 2M in annual operational savings.</li>
+                <li>Integrated and analysed data from 5,000+ energy customers, creating Power BI dashboards and regulatory reports for operational and compliance needs.</li>
+                <li>Analysed the electricity reconnection process, identifying bottlenecks that led to a 4% efficiency improvement and increased service capacity for approximately 3,000 customers per month.</li>
+                <li>Managed business and procurement requirements for a PEN 3M municipal licensing service, coordinating cross-functional teams to streamline processes and improve customer experience.</li>
+                <li>Led business analysis and system implementation for a new Commercial Management System, translating business requirements into technical specifications and supporting the end-to-end deployment.</li>
+              </ul>
+            </div>
+
+            <!-- Puesto anterior -->
+            <div class="role-block">
+              <h3 class="role">Energy Balance and Metering Intern</h3>
+              <p class="role__meta">Nov 2020 – Oct 2021, Lima, Peru</p>
+              <ul class="role__list">
+                <li>Built a Python-based data quality pipeline to identify and impute missing and erroneous records across 600+ medium-voltage assets, achieving 98% data reliability.</li>
+                <li>Developed a mobile application that digitized installation and maintenance workflows for 10+ operational teams, reducing manual processes and rework.</li>
+                <li>Designed ETL pipelines and Power BI dashboards to analyze energy losses across 10,000+ monitoring points and support data-driven operational decisions.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+          <!-- ENEL -->
+          <div class="tabs__panel" role="tabpanel" id="panel-enel" aria-labelledby="tab-enel" tabindex="0" hidden>
+
+            <!-- Puesto más reciente -->
+            <div class="role-block">
+              <h3 class="role">Customer Experience and Interaction Analyst</h3>
+              <p class="role__meta">Nov 2021 – Jul 2024, Lima, Peru</p>
+              <ul class="role__list">
+                <li>Built a Python-based predictive model for metering equipment failures, achieving 89% accuracy and an estimated PEN 2M in annual operational savings.</li>
+                <li>Integrated and analysed data from 5,000+ energy customers, creating Power BI dashboards and regulatory reports for operational and compliance needs.</li>
+                <li>Analysed the electricity reconnection process, identifying bottlenecks that led to a 4% efficiency improvement and increased service capacity for approximately 3,000 customers per month.</li>
+                <li>Managed business and procurement requirements for a PEN 3M municipal licensing service, coordinating cross-functional teams to streamline processes and improve customer experience.</li>
+                <li>Led business analysis and system implementation for a new Commercial Management System, translating business requirements into technical specifications and supporting the end-to-end deployment.</li>
+              </ul>
+            </div>
+
+            <!-- Puesto anterior -->
+            <div class="role-block">
+              <h3 class="role">Energy Balance and Metering Intern</h3>
+              <p class="role__meta">Nov 2020 – Oct 2021, Lima, Peru</p>
+              <ul class="role__list">
+                <li>Built a Python-based data quality pipeline to identify and impute missing and erroneous records across 600+ medium-voltage assets, achieving 98% data reliability.</li>
+                <li>Developed a mobile application that digitized installation and maintenance workflows for 10+ operational teams, reducing manual processes and rework.</li>
+                <li>Designed ETL pipelines and Power BI dashboards to analyze energy losses across 10,000+ monitoring points and support data-driven operational decisions.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CREDENTIALS ============ -->
+    <section class="credentials wrap" id="credentials" aria-labelledby="cred-title">
+      <h2 class="section-title" id="cred-title"><span class="cm">/*</span> Credentials <span class="cm">*/</span></h2>
+
+      <div class="ledger">
+        <h3 class="ledger__title">Education</h3>
+        <ol class="ledger__rows">
+          <li class="row">
+            <span class="row__date">2026 – 2027</span>
+            <span class="row__name">MSc Data Science</span>
+            <span class="row__by">University of Bristol</span>
+          </li>
+          <li class="row">
+            <span class="row__date">2015 - 2020</span>
+            <span class="row__name">BSc Industrial and Systems Engineering</span>
+            <span class="row__by">University of Piura</span>
+          </li>
+        </ol>
+      </div>
+
+      <div class="ledger">
+        <h3 class="ledger__title">Certifications</h3>
+        <ol class="ledger__rows">
+          <li class="row">
+            <span class="row__date">AZ‑900</span>
+            <span class="row__name">Microsoft Certified: Azure Fundamentals
+              <small>Cloud concepts, core Azure services, security, governance and pricing.</small></span>
+            <a class="row__by" href="#">Verify</a>
+          </li>
+          <li class="row">
+            <span class="row__date">PL‑300</span>
+            <span class="row__name">Microsoft Certified: Power BI Data Analyst Associate
+              <small>Data modelling, DAX and M, visualisation and interactive dashboards.</small></span>
+            <a class="row__by" href="https://drive.google.com/file/d/1yVUHVYbX05xfPrGZGGSqA5RDBvzYkZsU/view?usp=sharing" target="_blank" rel="noopener">Verify</a>
+          </li>
+          <li class="row">
+            <span class="row__date">GitHub</span>
+            <span class="row__name">GitHub Actions
+              <small>CI/CD pipelines, automated tests, builds and deployments.</small></span>
+            <a class="row__by" href="#">Verify</a>
+          </li>
+          <li class="row">
+            <span class="row__date">GitHub</span>
+            <span class="row__name">GitHub Foundations
+              <small>Version control, Git workflows and collaboration on GitHub.</small></span>
+            <a class="row__by" href="https://www.credly.com/badges/8b9c516d-1abd-47f9-b6f7-4c24fbf06034/public_url" target="_blank" rel="noopener">Verify</a>
+          </li>
+        </ol>
+      </div>
+
+      <div class="ledger">
+        <h3 class="ledger__title">Courses</h3>
+        <ol class="ledger__rows">
+          <li class="row"><span class="row__date">Jun 2026</span><span class="row__name">Forward Program</span><span class="row__by">McKinsey & Company</span></li>
+          <li class="row"><span class="row__date">Nov 2025</span><span class="row__name">CS50: Introduction to Computer Science</span><span class="row__by">Harvard University</span></li>
+          <li class="row"><span class="row__date">Sep 2025</span><span class="row__name">Deep Learning Specialization</span><span class="row__by">DeepLearning.AI</span></li>
+          <li class="row"><span class="row__date">Jul 2025</span><span class="row__name">Machine Learning Specialization</span><span class="row__by">DeepLearning.AI</span></li>
+          <li class="row"><span class="row__date">Jan 2025</span><span class="row__name">Product Management for AI and Data Science</span><span class="row__by">365 Data Science</span></li>
+        </ol>
+        <div class="more" id="more-courses">
+          <div class="more__inner">
+            <ol class="ledger__rows">
+              <li class="row"><span class="row__date">Jul 2025</span><span class="row__name">AI for Everyone</span><span class="row__by">DeepLearning.AI</span></li>
+              <li class="row"><span class="row__date">Jul 2025</span><span class="row__name">Business Strategy: Competitive Advantage</span><span class="row__by">Wharton, Coursera</span></li>
+              <li class="row"><span class="row__date">Mar 2025</span><span class="row__name">Flutter and Dart</span><span class="row__by">Udemy</span></li>
+              <li class="row"><span class="row__date">Jan 2025</span><span class="row__name">Data Privacy and Protection Law</span><span class="row__by">University of Pennsylvania</span></li>
+              <li class="row"><span class="row__date">Jan 2025</span><span class="row__name">ChatGPT for Data Science</span><span class="row__by">365 Data Science</span></li>
+              <li class="row"><span class="row__date">May 2022</span><span class="row__name">Energy Innovation and Emerging Technologies Program</span><span class="row__by">Stanford University</span></li>
+          <li class="row"><span class="row__date">Sep 2020</span><span class="row__name">IBM Data Science Professional Certificate</span><span class="row__by">IBM, Coursera</span></li>
+            </ol>
+          </div>
+        </div>
+        <button class="more__toggle" type="button" aria-expanded="false" aria-controls="more-courses"
+                data-open-label="Show fewer courses" data-closed-label="Show all 12 courses">Show all 12 courses</button>
+      </div>
+
+      <div class="ledger">
+        <h3 class="ledger__title">Talks and teaching</h3>
+        <ol class="ledger__rows">
+          <li class="row">
+            <span class="row__date">Ago 2026</span>
+            <span class="row__name">Talk: Power BI for projects, business, and professional management</span>
+            <span class="row__by">IEEE Young Professionals</span>
+          </li>
+          <li class="row">
+            <span class="row__date">Jul 2026</span>
+            <span class="row__name">Volunteer for disaster response</span>
+            <span class="row__by">UNV, Humanitarian OpenStreetMap Team</span>
+          </li>
+          <li class="row">
+            <span class="row__date">Sep 2025</span>
+            <span class="row__name">Volunteer Scratch teacher</span>
+            <span class="row__by">IE Enrique Nerini</span>
+          </li>
+          <li class="row">
+            <span class="row__date">Jul 2025</span>
+            <span class="row__name">Volunteer office software teacher</span>
+            <span class="row__by">Pachacútec Institute</span>
+          </li>
+          <li class="row">
+            <span class="row__date">Oct 2024</span>
+            <span class="row__name">Talk: Data science in action, innovation and opportunities for young professionals</span>
+            <span class="row__by">IEEE Young Professionals</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ WEB & APPS (secondary) ============ -->
+    <section class="web wrap" id="web" aria-labelledby="web-title">
+      <h2 class="section-title section-title--sm" id="web-title"><span class="cm">/*</span> Web and app design <span class="cm">*/</span></h2>
+      <p class="section-note">I also design and build websites and apps for clients and for fun.</p>
+
+      <ul class="web__list">
+        <li class="web__item" style="--bg: var(--rose);">
+          <a href="https://www.fundacionpedroyangelicadeosma.org" target="_blank" rel="noopener">
+            <span class="web__name">Pedro y Angelica de Osma Foundation</span>
+            <span class="web__what">Foundation website showcasing its social programmes and the support they offer, built in Framer with Make and Brevo integrations.</span>
+            <span class="web__kind">Framer, Ongoing</span>
+          </a>
+        </li>
+        <li class="web__item" style="--bg: var(--sky);">
+          <a href="https://www.museopedrodeosma.org" target="_blank" rel="noopener">
+            <span class="web__name">Pedro de Osma Museum</span>
+            <span class="web__what">Museum website built in Framer, with exhibitions from a CMS and a newsletter flow in Make and Brevo.</span>
+            <span class="web__kind">Framer</span>
+          </a>
+        </li>
+        <li class="web__item" style="--bg: var(--lilac);">
+          <a href="https://github.com/Danielariscob/osma_museum_app" target="_blank" rel="noopener">
+            <span class="web__name">Osma museum app</span>
+            <span class="web__what">Room‑by‑room virtual tour, artwork audioguides and an online store.</span>
+            <span class="web__kind">Flutter, Dart</span>
+          </a>
+        </li>
+        <li class="web__item" style="--bg: var(--blush);">
+          <a href="https://enriquenerinicollazos.com" target="_blank" rel="noopener">
+            <span class="web__name">IE Enrique Nerini</span>
+            <span class="web__what">Website for a public school in Lima, with school news and information for families.</span>
+            <span class="web__kind">HTML, CSS, JavaScript</span>
+          </a>
+        </li>
+        <li class="web__item" style="--bg: var(--lemon);">
+          <a href="https://github.com/Danielariscob/snoopy_flower_quest" target="_blank" rel="noopener">
+            <span class="web__name">Flower Quest</span>
+            <span class="web__what">A small browser game with Snoopy as a character.</span>
+            <span class="web__kind">JavaScript</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__inner wrap">
+        <h2 class="contact__title" id="contact-title">Get in touch</h2>
+        <p class="contact__lead">I’m happy to talk about data science roles and projects.</p>
+
+        <p class="contact__email">
+          <a href="mailto:danielarb.99@outlook.com">danielarb.99@outlook.com</a>
+          <button class="copy" type="button" data-copy="danielarb.99@outlook.com">Copy email</button>
+        </p>
+
+        <ul class="contact__links">
+          <li><a href="https://www.linkedin.com/in/daniela-risco/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/Danielariscob" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="docs/CV_Daniela-Risco.pdf" download>Download CV (PDF)</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>© <span data-year>2026</span> Daniela Risco</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="js/grain.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
